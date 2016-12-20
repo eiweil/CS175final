@@ -16,7 +16,7 @@
 
 <h4> The Meat: The Metaballs </h4>
 
-<p> We implemented metaballs using the marching cubes algorithm by combining knowledge from several sources. By filling the space with an imaginary grid of cubes and sampling just the vertices of the cubes, rather than each pixel (which would be incredibly expensive and inefficient), we can look-up the edges between vertices that are on the metaball’s isosurface. Then we map triangles to interpolated points along the edges of the marching cubes to comprise the surface of the metaballs. By using a threshold variable to check if another metaball is within range of its force field we can extend the isosurface of triangles between two metaballs which gives it the sticky, lava-like properties. </p>
+<p> We implemented metaballs using the marching cubes algorithm by combining knowledge from several sources. By filling the space with an imaginary grid of cubes and sampling just the vertices of the cubes, rather than each pixel (which would be incredibly expensive and inefficient), we can look-up the edges between vertices that are on the metaball’s isostatic surface. Then we map triangles to interpolated points along the edges of the marching cubes to comprise the surface of the metaballs. By using a threshold variable to check if another metaball is within range of its force field we can extend the isostatic surface of triangles between two metaballs which gives it the sticky, lava-like properties. </p>
 
 <p> In order to make a more realistic shape from the metaballs without worrying about physics simulations, we made the metaballs all have different radii. Because of this, the entire lava looks fluid and like each piece that drops is created organically in the momement, as they mix around and appear at different times. </p>
 
@@ -71,7 +71,7 @@
 
 <h4> Metaballs </h4>
 
-<p>  </p>
+<p> Metaballs taught us a new and unique way of modeling surfaces useful for particles and other solids. We learned how to implement them efficiently using the marching cubes algorithm to interpolate the surface rather than calculating each point. We were also able to practice animating different types of surfaces. </p>
 
 <h4> Texture Mapping </h4>
 
